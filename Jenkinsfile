@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('git clone') {
             steps {
-               https://github.com/Devikarani19/DOCKER.git
+               'https://github.com/Devikarani19/DOCKER.git'
             }
         }
         stage('Make Changes') {
