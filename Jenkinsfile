@@ -7,7 +7,6 @@ pipeline {
                https://github.com/Devikarani19/DOCKER.git
             }
         }
-
         stage('Make Changes') {
             steps {
                 script {
@@ -15,13 +14,11 @@ pipeline {
                 }
             }
         }
-
         stage('git init') {
             steps {
                 sh 'git init'
             }
         }
-        
         stage('git add') {
             steps {
                 sh 'git add .'
