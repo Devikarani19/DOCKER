@@ -56,7 +56,6 @@ git clone <url>
 Get inside the directory and Install Packages
 
 ```bash
-cd nodejs-on-ec2
 npm install
 ```
 
