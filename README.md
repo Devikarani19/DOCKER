@@ -13,9 +13,19 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 Activate nvm by typing the following at the command line.
 
 ```bash
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+# Source .bashrc
+source ~/.bashrc
 
+# Or create .bash_profile
+touch ~/.bash_profile
+nano ~/.bash_profile
+
+# Add NVM lines to .bash_profile and save
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+# Source the file to apply changes
 source ~/.bash_profile
 ```
 
